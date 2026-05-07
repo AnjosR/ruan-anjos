@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-primary: #f97316;
+  --color-background: #050505;
+  --color-surface: #0a0a0a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #050505;
+  color: #d4d4d4;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 40%,
+    transparent 70%
+  );
+}
+
+.floating-card {
+  transition:
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.5s,
+    border-color 0.5s;
+  will-change: transform;
+}
+.floating-card:hover {
+  transform: scale(1.05) translateY(-10px) !important;
+  z-index: 50;
+  box-shadow: 0 25px 50px -12px rgba(249, 115, 22, 0.2);
+  border-color: rgba(249, 115, 22, 0.5) !important;
+}
+
+.cinematic-photo {
+  animation: cinematicColor 6s infinite alternate;
+  transition: all 0.5s ease;
+}
+
+@keyframes cinematicColor {
+  0% {
+    filter: grayscale(100%) contrast(1.2) brightness(0.9);
+  }
+  100% {
+    filter: grayscale(0%) contrast(1.1) brightness(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
