@@ -35,9 +35,9 @@ function AchievementCard({ achievement, delay }: { achievement: Achievement; del
   )
 }
 
-export function Conquistas() {
+export function Achievements() {
   return (
-    <section id="conquistas" className="py-24 border-t border-white/5 bg-[#0A0A0A] relative z-20">
+    <section id="achievements" className="py-24 border-t border-white/5 bg-[#0A0A0A] relative z-20">
       <div className="container mx-auto px-6 lg:px-12 max-w-360">
         <div className="flex items-end gap-4 mb-16" data-aos="fade-right">
           <h2 className="text-4xl text-white font-medium">Timeline</h2>

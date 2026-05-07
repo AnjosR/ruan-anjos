@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
-import { Conquistas } from "./components/Conquistas";
-import { Citacoes } from "./components/Citacoes";
-import { Contato } from "./components/Contato";
+import { Achievements } from "./components/Achievements";
+import { Quotes } from "./components/Quotes";
+import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
     <div className="text-neutral-300 min-h-screen flex flex-col selection:bg-orange-500 selection:text-black">
       <Hero />
       <About />
-      <Conquistas />
-      <Citacoes />
-      <Contato />
+      <Achievements />
+      <Quotes />
+      <Contact />
       <Footer />
     </div>
   );

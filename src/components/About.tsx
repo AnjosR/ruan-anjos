@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section
-      id="sobre"
+      id="about"
       className="py-24 border-t border-white/5 bg-backgroundrelative z-20"
     >
       <div className="container mx-auto px-6 lg:px-12 max-w-360">
@@ -11,7 +11,7 @@ export function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/5 pb-16">
           <div className="md:col-span-1 text-xs font-mono text-neutral-500 uppercase tracking-widest">
-            Oficial Profile
+            Official Profile
             <br />
             <span className="text-orange-500 mt-2 block">summary</span>
           </div>

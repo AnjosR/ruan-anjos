@@ -5,12 +5,12 @@ import { AnimatedButton } from "./AnimatedButton";
 // 2. Replace "YOUR_FORM_ID" below with the ID Formspree gives you (e.g. "xpwzgkla")
 const FORMSPREE_ID = "mjgloalg";
 
-export function Contato() {
+export function Contact() {
   const [state, handleSubmit] = useForm(FORMSPREE_ID);
 
   return (
     <section
-      id="contato"
+      id="contact"
       className="py-24 border-t border-white/5 bg-[#0A0A0A] relative z-20"
     >
       <div className="container mx-auto px-6 lg:px-12 max-w-360">

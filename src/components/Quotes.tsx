@@ -4,10 +4,10 @@ import { QUOTES } from "../constants";
 const DOT_BG =
   "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjQ5LCAxMTUsIDIyLCAwLjA1KSIvPjwvc3ZnPg==";
 
-export function Citacoes() {
+export function Quotes() {
   return (
     <section
-      id="citacoes"
+      id="quotes"
       className="py-32 border-t border-white/5 bg-background relative z-20 overflow-hidden"
     >
       <div
