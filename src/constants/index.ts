@@ -52,7 +52,7 @@ export interface SocialLink {
 export const SOCIAL_LINKS: SocialLink[] = [
   { icon: "mdi:instagram",  label: "Instagram", href: "#" },
   { icon: "mdi:linkedin",   label: "LinkedIn",  href: "https://www.linkedin.com/in/ruan-anjos-0b95712b3/" },
-  { icon: "mdi:github",     label: "GitHub",    href: "https://github.com/oAnjophb" },
+  { icon: "mdi:github",     label: "GitHub",    href: "https://github.com/AnjosR" },
 ]
 
 export const QUOTES: string[] = [
