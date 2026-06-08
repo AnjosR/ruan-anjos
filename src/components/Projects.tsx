@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { type Achievement, ACHIEVEMENTS } from "../constants";
+import { type Project, PROJECTS } from "../constants";
 
 const MONTHS: Record<string, number> = {
   january: 1,
@@ -24,15 +24,15 @@ function parseYearField(value: string): number {
   return year * 100 + month;
 }
 
-const SORTED_ACHIEVEMENTS = [...ACHIEVEMENTS].sort(
+const SORTED_PROJECTS = [...PROJECTS].sort(
   (a, b) => parseYearField(a.year) - parseYearField(b.year),
 );
 
-function AchievementCard({
-  achievement,
+function ProjectCard({
+  Project,
   delay,
 }: {
-  achievement: Achievement;
+  Project: Project;
   delay: number;
 }) {
   return (
@@ -42,38 +42,38 @@ function AchievementCard({
       data-aos-delay={delay}
     >
       <div className="w-12 h-12 bg-[#0A0A0A] border border-white/10 flex items-center justify-center mb-6 text-orange-500 group-hover:bg-orange-500 group-hover:text-black transition-colors">
-        <Icon icon={achievement.icon} className="text-2xl" />
+        <Icon icon={Project.logoEnterprise} className="text-2xl" />
       </div>
       <span className="text-xs font-mono text-neutral-500 uppercase tracking-widest block mb-2">
-        {achievement.year}
+        {Project.year}
       </span>
       <h3 className="text-white font-medium text-xl mb-3">
-        {achievement.title}
+        {Project.field}
       </h3>
-      <p className="text-neutral-400 text-sm font-light">{achievement.quote}</p>
+      <p className="text-neutral-400 text-sm font-light">{Project.description}</p>
     </div>
   );
 }
 
-export function Achievements() {
+export function Projects() {
   return (
     <section
-      id="achievements"
+      id="Projects"
       className="py-24 border-t border-white/5 bg-[#0A0A0A] relative z-20"
     >
       <div className="container mx-auto px-6 lg:px-12 max-w-360">
         <div className="flex items-end gap-4 mb-16" data-aos="fade-right">
           <h2 className="text-4xl text-white font-medium">Timeline</h2>
           <span className="text-xs font-mono text-neutral-500 uppercase tracking-widest mb-1.5">
-            Achievements
+            Projects
           </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {SORTED_ACHIEVEMENTS.map((item, i) => (
-            <AchievementCard
-              key={item.title}
-              achievement={item}
+          {SORTED_PROJECTS.map((item, i) => (
+            <ProjectCard
+              key={item.field}
+              Project={item}
               delay={i * 100}
             />
           ))}

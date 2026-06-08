@@ -1,9 +1,16 @@
-export interface Achievement {
+export type Achievement = {
   icon: string;
   year: string;
   title: string;
   quote: string;
-}
+};
+
+export type Project = {
+  logoEnterprise: string;
+  year: string;
+  field: string;
+  description: string;
+};
 
 export const TYPED_STRINGS: string[] = [
   "Turning complex problems into crystal-clear code.",
@@ -43,17 +50,30 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
 ];
 
+export const PROJECTS: Project[] = [
+  {
+    logoEnterprise: "solar:cup-star-bold-duotone",
+    year: "2025 - Present",
+    field: "Software Engenieer",
+    description: "descrição do trabalho a ser realizado",
+  },
+];
+
 export interface SocialLink {
-  icon: string
-  label: string
-  href: string
+  icon: string;
+  label: string;
+  href: string;
 }
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { icon: "mdi:instagram",  label: "Instagram", href: "#" },
-  { icon: "mdi:linkedin",   label: "LinkedIn",  href: "https://www.linkedin.com/in/ruan-anjos-0b95712b3/" },
-  { icon: "mdi:github",     label: "GitHub",    href: "https://github.com/AnjosR" },
-]
+  { icon: "mdi:instagram", label: "Instagram", href: "#" },
+  {
+    icon: "mdi:linkedin",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/ruan-anjos-0b95712b3/",
+  },
+  { icon: "mdi:github", label: "GitHub", href: "https://github.com/AnjosR" },
+];
 
 export const QUOTES: string[] = [
   '"The only way to do great work is to love what you do." — Steve Jobs',
