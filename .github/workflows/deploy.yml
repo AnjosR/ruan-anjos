@@ -20,9 +20,12 @@ jobs:
       - run: npm run build
 
       - name: Configurar SSH
+        env:
+          SSH_KEY_B64: ${{ secrets.VPS_SSH_KEY_B64 }}
         run: |
+          if [ -z "$SSH_KEY_B64" ]; then echo "::error::Secret VPS_SSH_KEY_B64 vazio ou não encontrado"; exit 1; fi
           mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_ed25519
+          echo "$SSH_KEY_B64" | base64 -d > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keygen -y -f ~/.ssh/id_ed25519 > /dev/null
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
