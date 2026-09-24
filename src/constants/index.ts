@@ -61,41 +61,6 @@ export const PROJECTS: Project[] = [
     description:
       "An interactive web platform to catalog and modernize the management of Piauí's traditional and heirloom seed collections, connecting the community with the technical team to help preserve the region's agricultural heritage.",
     linkProject: "https://casas-de-sementes.vercel.app",
-  },  {
-    logoProject: Sprout,
-    workTime: "MAY/2026 - CURRENT ",
-    field: "Software Engenieer",
-    description:
-      "An interactive web platform to catalog and modernize the management of Piauí's traditional and heirloom seed collections, connecting the community with the technical team to help preserve the region's agricultural heritage.",
-    linkProject: "https://casas-de-sementes.vercel.app",
-  },  {
-    logoProject: Sprout,
-    workTime: "MAY/2026 - CURRENT ",
-    field: "Software Engenieer",
-    description:
-      "An interactive web platform to catalog and modernize the management of Piauí's traditional and heirloom seed collections, connecting the community with the technical team to help preserve the region's agricultural heritage.",
-    linkProject: "https://casas-de-sementes.vercel.app",
-  },  {
-    logoProject: Sprout,
-    workTime: "MAY/2026 - CURRENT ",
-    field: "Software Engenieer",
-    description:
-      "An interactive web platform to catalog and modernize the management of Piauí's traditional and heirloom seed collections, connecting the community with the technical team to help preserve the region's agricultural heritage.",
-    linkProject: "https://casas-de-sementes.vercel.app",
-  },  {
-    logoProject: Sprout,
-    workTime: "MAY/2026 - CURRENT ",
-    field: "Software Engenieer",
-    description:
-      "An interactive web platform to catalog and modernize the management of Piauí's traditional and heirloom seed collections, connecting the community with the technical team to help preserve the region's agricultural heritage.",
-    linkProject: "https://casas-de-sementes.vercel.app",
-  },  {
-    logoProject: Sprout,
-    workTime: "MAY/2026 - CURRENT ",
-    field: "Software Engenieer",
-    description:
-      "An interactive web platform to catalog and modernize the management of Piauí's traditional and heirloom seed collections, connecting the community with the technical team to help preserve the region's agricultural heritage.",
-    linkProject: "https://casas-de-sementes.vercel.app",
   },
 ];
 
